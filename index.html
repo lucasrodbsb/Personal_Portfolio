@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/68caef75ae.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <main>
+        <section class="thumb">
+
+            <!-- <button class="openbtn" onclick="openNav()">☰</button> -->
+            <div class="content-thumb">
+                <span id="foto" class="image-thumb"></span>
+                <div class="text-thumb">
+                    <h1 id="nome">Lucas Rodrigues</h1>
+                    <span id="txt">Front-End Developer and UI/UX Designer</span>
+                    <div class="media-icons">
+                        <a href="#" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Baixar CV"><i class="fab fa-file-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutme">
+            <div class="container c-aboutme">
+                <div class="aboutme-text">
+                    <h1>Sobre mim:</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Est ultricies integer quis auctor. Vulputate sapien nec sagittis
+                        aliquam malesuada bibendum arcu vitae. Nunc consequat interdum varius sit. Augue mauris augue
+                        neque gravida in fermentum. Viverra suspendisse potenti nullam ac. Est placerat in egestas erat
+                        imperdiet sed euismod. Laoreet non curabitur gravida arcu. Non consectetur a erat nam at lectus
+                        urna duis. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Vel quam elementum
+                        pulvinar etiam non quam lacus suspendisse. Consectetur lorem donec massa sapien faucibus. At
+                        volutpat diam ut venenatis tellus in metus. Senectus et netus et malesuada fames. Laoreet sit
+                        amet cursus sit. Facilisis volutpat est velit egestas. Viverra maecenas accumsan lacus vel. Sed
+                        euismod nisi porta lorem. Dapibus ultrices in iaculis nunc sed augue lacus viverra.</span>
+                </div>
+                <div class="aboutme-img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+
+        ScrollReveal({ distance: '500px' })
+        ScrollReveal().reveal('.thumb',
+            {
+                delay: 0,
+                origin: 'top',
+                duration: 1500,
+                reset: true,
+                easing: 'ease'
+            }
+        );
+        ScrollReveal().reveal('.punchline', { delay: 2000 });
+
+
+        VanillaTilt.init(document.querySelector("#foto"), {
+            glare: true,
+            reverse: true,
+            transition: true,
+            scale: 1.1,
+            "max-glare": 0.3
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!-- <div class="smedia-thumb">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-solid fa-file-arrow-down"></i>
+</div> -->

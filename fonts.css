@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Pluto", sans-serif ;
+    src: local(Pluto), url(accets/fonts/PLUTOBOLD.TTF);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Pluto", sans-serif ;
+    src: local(Pluto), url(accets/fonts/PLUTOMEDIUM.TTF);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Pluto", sans-serif ;
+    src:local(Pluto), url(accets/fonts/PLUTOREGULAR.TTF);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Pluto", sans-serif ;
+    src: local(Pluto), url(accets/fonts/PLUTOLIGHT.TTF);
+    font-weight: 100;
+}
