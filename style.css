@@ -10,6 +10,10 @@
 canvas {
   display: block;
 }
+body {
+  white-space: none;
+  overflow: hidden;
+}
 
 main {
   font-family: 'Montserrat', sans-serif;
@@ -221,38 +225,54 @@ main>section {
   margin-bottom: 20px;
 }
 
-/*teste*/
-/* #projects {
-  display: flex;
-  min-height: 70vh;
-  font-family: 'Montserrat', sans-serif;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  
-  position: relative;
-  z-index: 0;
-} */
 
-#aboutme {
-  background-color: rgb(255, 255, 255);
-  height: max-content;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  color: #fff;
+
+
+@media only screen and (max-width: 570px){
+  .text-thumb>h1 {
+    font-size: 40px;
+  }
+
+
+  .text-thumb > span {
+    font-size: 17px;
+  }
+
+  .image-thumb {
+    width: 350px;
+    height: 350px;
+  }
+  main>section {
+    /* max-width: 1350px; */
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
-.aboutme-text{
-  font-size: 18px;
-  font-weight: 100;
-  position: relative;
-  max-width: 500px;
+@media only screen and (max-width: 400px){
+  .text-thumb>h1 {
+    font-size: 30px;
+    /* text-align: left; */
+  }
+
+  .text-thumb > span {
+    font-size: 13px;
+  }
+.image-thumb {
+    width: 100%;
+    height: 300px;
+}
+  main>section {
+    /* max-width: 1350px; */
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    white-space: none;
+  }
 }
 
-.aboutme-text::after {
-
-}
 
 
 
@@ -280,25 +300,6 @@ main>section {
       background-color: #af2a2a;
   }
 
-
-.c-aboutme {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.aboutme-img {
-  background-color: #444;
-  height: 500px;
-  width: 350px;
-  background-image: url(accets/foto.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.c-aboutme img{
-  height: 200px;
-}
 
 
 /* #projects::before {

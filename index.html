@@ -39,30 +39,12 @@
                     <h1 id="nome">Lucas Rodrigues</h1>
                     <span id="txt">Front-End Developer and UI/UX Designer</span>
                     <div class="media-icons">
-                        <a href="#" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="Baixar CV"><i class="fab fa-file-arrow-down"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-rocha-515358223" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5561982789687" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/gh0st_l?igshid=YmMyMTA2M2Y=" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/lucasrodbsb" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                        <!-- <a href="" download="CurrículoLucasR.pdf" target="_blank" title="Baixar CV"><img src="accets/CV.png" style="width: 30px; filter:invert(); height:auto;"></a> -->
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="aboutme">
-            <div class="container c-aboutme">
-                <div class="aboutme-text">
-                    <h1>Sobre mim:</h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Est ultricies integer quis auctor. Vulputate sapien nec sagittis
-                        aliquam malesuada bibendum arcu vitae. Nunc consequat interdum varius sit. Augue mauris augue
-                        neque gravida in fermentum. Viverra suspendisse potenti nullam ac. Est placerat in egestas erat
-                        imperdiet sed euismod. Laoreet non curabitur gravida arcu. Non consectetur a erat nam at lectus
-                        urna duis. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Vel quam elementum
-                        pulvinar etiam non quam lacus suspendisse. Consectetur lorem donec massa sapien faucibus. At
-                        volutpat diam ut venenatis tellus in metus. Senectus et netus et malesuada fames. Laoreet sit
-                        amet cursus sit. Facilisis volutpat est velit egestas. Viverra maecenas accumsan lacus vel. Sed
-                        euismod nisi porta lorem. Dapibus ultrices in iaculis nunc sed augue lacus viverra.</span>
-                </div>
-                <div class="aboutme-img">
                 </div>
             </div>
         </section>
@@ -71,16 +53,27 @@
     <script>
 
         ScrollReveal({ distance: '500px' })
-        ScrollReveal().reveal('.thumb',
+
+        ScrollReveal().reveal('#foto',
             {
                 delay: 0,
-                origin: 'top',
+                origin: 'left',
                 duration: 1500,
                 reset: true,
                 easing: 'ease'
             }
         );
-        ScrollReveal().reveal('.punchline', { delay: 2000 });
+        ScrollReveal().reveal('.text-thumb',
+            {
+                delay: 0,
+                origin: 'right',
+                duration: 1500,
+                reset: true,
+                easing: 'ease'
+            }
+        );
+
+        // ScrollReveal().reveal('.punchline', { delay: 2000 });
 
 
         VanillaTilt.init(document.querySelector("#foto"), {
@@ -89,7 +82,6 @@
             transition: true,
             scale: 1.1,
             "max-glare": 0.3
-
         });
 
     </script>

@@ -11,7 +11,7 @@ function closeNav() {
 
 var messageArray1 = ["Lucas Rodrigues"];
 var textPosition = 0;
-var speed = 100;
+var speed = 150;
 
 typewriter1 = () => {
   document.querySelector("#nome").innerHTML = messageArray1[0].substring(0, textPosition) + "<span id='barrinha'>|</span>";
